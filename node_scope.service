@@ -1,5 +1,5 @@
 [Unit]
-Description=The Node Scope service
+Description=The Node scope service
 After=mdns.service
 
 [Service]
