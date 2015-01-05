@@ -3,8 +3,7 @@ Description=The Node Scope service
 After=mdns.service
 
 [Service]
-ExecStart=/bin/su root -c 'cd /home/root/NodeScope28 | node 
-/home/root/NodeScope28/nodescope28.js'
+ExecStart=/bin/su root -c 'cd /home/root/NodeScope28 | node /home/root/NodeScope28/nodescope28.js'
 Restart=always
 RestartSec=10s
 Environment=NODE_ENV=production
