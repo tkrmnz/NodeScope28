@@ -1,5 +1,4 @@
 var express = require("express");
-//var logger = require("morgan");
 var http = require("http");
 var finalhandler = require('finalhandler');
 var serveStatic = require('serve-static');
@@ -11,11 +10,10 @@ var lineReader = require('line-reader');
 var csv = require('comma-separated-values');
 var path = require("path");
 
-var dirName = "/home/root/NodeExp/public/";
-//var dirName = "./public/";
-//var serve = serveStatic("/var/www");
-//var serve = serveStatic("./public");
-var serve = serveStatic("/home/root/NodeExp/public");
+var dirName = "/home/root/NodeScope28/public/";
+//var dirName = "/home/root/NodeExp/public/";
+var serve = serveStatic("/home/root/NodeScope28/public");
+//var serve = serveStatic("/home/root/NodeExp/public");
 var app = express();
 var serialPort = new SerialPort("/dev/MSO-28-0",{
 		baudrate: 460800
